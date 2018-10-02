@@ -44,10 +44,8 @@ keymap = {
     '(down | dune | doom)':  Key('down'),
 
     'scroll down': [Key('down')] * 30,
-    # 'descend': [Key('down')] * 100,
     '(doomway | scroll way down)': Key('cmd-down'),
     'scroll up': [Key('up')] * 30,
-    # 'ascend': [Key('up')] * 100,
     '(jeepway | scroll way up)': Key('cmd-up'),
 
     # selecting
@@ -75,9 +73,7 @@ keymap = {
     'window space right': Key('cmd-alt-ctrl-right'),
     'window space left': Key('cmd-alt-ctrl-left'),
 
-    # 'scroll down': [Key('down')] * 30,
     'page up': [Key('pageup')],
-    # 'scroll up': [Key('up')] * 30,
     'page down': [Key('pagedown')],
     # 'scroll top': [Key('cmd-up')],
     # 'scroll bottom': [Key('cmd-down')],

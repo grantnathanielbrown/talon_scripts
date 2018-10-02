@@ -361,6 +361,9 @@ keymap.update({
     'ascend': [Key('up')] * 100,
     'plummet': [Key('down')] * 100,
     'grabby': Key('cmd-a'),
+    'rover': Key('cmd-f'),
+    'remove':[Key('shift-alt-left'), Key('delete')],
+
 
 })
 ctx.keymap(keymap)
