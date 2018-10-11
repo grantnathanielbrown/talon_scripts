@@ -1,3 +1,2 @@
-function test()  {
-    documents.getElementById('demo').innerHTML = 'hello JavaScript!';
-}
+let x = 5;
+console.log(x);

@@ -356,13 +356,26 @@ keymap.update({
 
     'scroll down': [Key('down')] * 30,
     'scroll up': [Key('up')] * 30,
+
     # GRANT COMMANDS
     'revert': Key('cmd-z'),
-    'ascend': [Key('up')] * 100,
-    'plummet': [Key('down')] * 100,
+    'ascend': [Key('up')] * 130,
+    'plummet': [Key('down')] * 130,
     'grabby': Key('cmd-a'),
     'rover': Key('cmd-f'),
     'remove':[Key('shift-alt-left'), Key('delete')],
+    'login laptop': ['Secure12!!', Key('enter')],
+    'starchy': Key('cmd-space'),
+    'copy': Key('cmd-c'),
+    'paste': Key('cmd-v'),
+
+    # REPLACEMENT WORDS
+
+    # TERMINAL
+    'showy': ['ls', Key('enter')],
+    'get delete': Key('ctrl-c'),
+    'run gae': 'git add .',
+    'run gp': 'git push origin master',
 
 
 })
