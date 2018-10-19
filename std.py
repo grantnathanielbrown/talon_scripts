@@ -204,12 +204,12 @@ keymap.update({
     'run make (durr | dear)': 'mkdir ',
     'run get': 'git ',
     'run get (R M | remove)': 'git rm ',
-    'run get add': 'git add ',
+    # 'run get add': 'git add ',
     'run get bisect': 'git bisect ',
     'run get branch': 'git branch ',
     'run get checkout': 'git checkout ',
     'run get clone': 'git clone ',
-    'run get commit': 'git commit ',
+    # 'run get commit': 'git commit -m "" ',
     'run get diff': 'git diff ',
     'run get fetch': 'git fetch ',
     'run get grep': 'git grep ',
@@ -359,22 +359,33 @@ keymap.update({
 
     # GRANT COMMANDS
     'revert': Key('cmd-z'),
-    'ascend': [Key('up')] * 130,
-    'plummet': [Key('down')] * 130,
+    'super': [Key('up')] * 130,
+    'fall': [Key('down')] * 130,
     'grabby': Key('cmd-a'),
     'rover': Key('cmd-f'),
     'remove':[Key('shift-alt-left'), Key('delete')],
-    'login laptop': ['Secure12!!', Key('enter')],
+    'login laptop': ['JV4stock', Key('enter')],
     'starchy': Key('cmd-space'),
     'copy': Key('cmd-c'),
     'paste': Key('cmd-v'),
+    'shield': Key('cmd-s'),
+    'select line': [Key('home'), Key('shift-end')],
+    'end of line': Key('end'),  
+    # JAVASCRIPT
+    'console': ['console.log()', Key('left')],
+    'comment out': [Key('cmd-/')],
+    'develop': Key('cmd-alt-i'),
+    'let': 'let ',
+    'sequence': 'Array',
+    'function': 'function ',
+    'skittish': 'String',
 
     # REPLACEMENT WORDS
-
     # TERMINAL
     'showy': ['ls', Key('enter')],
     'get delete': Key('ctrl-c'),
-    'run gae': 'git add .',
+    'run git add': 'git add .',
+    'run get commit': ['git commit -m ""', Key('left')],
     'run gp': 'git push origin master',
 
 

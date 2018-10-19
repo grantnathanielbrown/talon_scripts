@@ -1,7 +1,7 @@
-import eye_mouse
 import time
 from talon import ctrl, tap
 from talon.voice import Context
+from talon_plugins import eye_mouse
 ctx = Context('mouse')
 
 x, y = ctrl.mouse_pos()
@@ -49,7 +49,7 @@ def mouse_release(m):
 
 keymap = {
     'righty': delayed_right_click,
-    '(click | go)': delayed_click,
+    'go': delayed_click, 
     'dubclick': delayed_dubclick,
     'tripclick': delayed_tripclick,
     'drag': mouse_drag,
