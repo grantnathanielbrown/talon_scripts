@@ -371,6 +371,9 @@ keymap.update({
     'shield': Key('cmd-s'),
     'select line': [Key('home'), Key('shift-end')],
     'end of line': Key('end'),  
+    'quit application': Key('cmd-q'),
+    'rearrange up': Key('alt-up'),
+    'rearrange down': Key('alt-down'),
     # JAVASCRIPT
     'console': ['console.log()', Key('left')],
     'comment out': [Key('cmd-/')],
@@ -379,6 +382,8 @@ keymap.update({
     'sequence': 'Array',
     'function': 'function ',
     'skittish': 'String',
+    'classic loop': "for (i = 0; i < x; i++)",
+
 
     # REPLACEMENT WORDS
     # TERMINAL
@@ -387,6 +392,7 @@ keymap.update({
     'run git add': 'git add .',
     'run get commit': ['git commit -m ""', Key('left')],
     'run gp': 'git push origin master',
+    'new directory': 'mkdir ',
 
 
 })
