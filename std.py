@@ -374,7 +374,9 @@ keymap.update({
     'quit application': Key('cmd-q'),
     'rearrange up': Key('alt-up'),
     'rearrange down': Key('alt-down'),
-    # JAVASCRIPT
+    'continue thought': Key('shift-enter'),
+
+    # JAVASCRIPT / VSCODE
     'console': ['console.log()', Key('left')],
     'comment out': [Key('cmd-/')],
     'develop': Key('cmd-alt-i'),
@@ -383,6 +385,13 @@ keymap.update({
     'function': 'function ',
     'skittish': 'String',
     'classic loop': "for (i = 0; i < x; i++)",
+    'binder': Key('cmd-b'),
+    'close studio tabs':[Key('cmd-k'), Key('w')],
+    'super rover': Key('cmd-shift-f'),
+    'select similar': Key('cmd-d'),
+    'super select similar': [Key('cmd-d')] * 10,
+    'ultimate select similar': [Key('cmd-d')] * 100,
+    
 
 
     # REPLACEMENT WORDS
@@ -393,7 +402,9 @@ keymap.update({
     'run get commit': ['git commit -m ""', Key('left')],
     'run gp': 'git push origin master',
     'new directory': 'mkdir ',
-
-
+    'react server': ['npm start', Key('enter')],
+    'react install': 'npm i --save ',
+    'open in studio': ['code .', Key('enter')],
+    
 })
 ctx.keymap(keymap)
