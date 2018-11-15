@@ -249,13 +249,13 @@ keymap.update({
 
     'args': ['()', Key('left')],
     'index': ['[]', Key('left')],
-    'block': [' {}', Key('left enter enter up tab')],
+    'block': [' {}', Key('left enter')],
     'empty array': '[]',
     'empty dict': '{}',
 
     'state (def | deaf | deft)': 'def ',
     'state else if': 'elif ',
-    'state if': 'if ',
+    'state if': 'if ()',
     'state else if': [' else if ()', Key('left')],
     'state while': ['while ()', Key('left')],
     'state for': ['for ()', Key('left')],
@@ -304,7 +304,7 @@ keymap.update({
     'equals': '=',
     '(minus | dash)': '-',
     'plus': '+',
-    'arrow': '->',
+    'fat arrow': '=> ',
     'call': '()',
     'indirect': '&',
     'dereference': '*',
@@ -375,6 +375,8 @@ keymap.update({
     'rearrange up': Key('alt-up'),
     'rearrange down': Key('alt-down'),
     'continue thought': Key('shift-enter'),
+    'chrome back': Key('cmd-left'),
+    
 
     # JAVASCRIPT / VSCODE
     'console': ['console.log()', Key('left')],
@@ -384,14 +386,18 @@ keymap.update({
     'sequence': 'Array',
     'function': 'function ',
     'skittish': 'String',
-    'classic loop': "for (i = 0; i < x; i++)",
+    'classic loop': "for (i = 0; i < x; i++) ",
     'binder': Key('cmd-b'),
     'close studio tabs':[Key('cmd-k'), Key('w')],
     'super rover': Key('cmd-shift-f'),
     'select similar': Key('cmd-d'),
     'super select similar': [Key('cmd-d')] * 10,
     'ultimate select similar': [Key('cmd-d')] * 100,
-    
+    'chrome reload': Key('cmd-r'),
+    'chrome reopen': Key('cmd-shift-t'),
+    'new variable': 'var ',
+    'tiny skittish': 'str',
+
 
 
     # REPLACEMENT WORDS
