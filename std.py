@@ -376,10 +376,11 @@ keymap.update({
     'rearrange down': Key('alt-down'),
     'continue thought': Key('shift-enter'),
     'chrome back': Key('cmd-left'),
+    'start of line': Key('home'),
     
 
     # JAVASCRIPT / VSCODE
-    'console': ['console.log()', Key('left')],
+    'javascript console': ['console.log()', Key('left')],
     'comment out': [Key('cmd-/')],
     'develop': Key('cmd-alt-i'),
     'let': 'let ',
@@ -397,6 +398,11 @@ keymap.update({
     'chrome reopen': Key('cmd-shift-t'),
     'new variable': 'var ',
     'tiny skittish': 'str',
+    'sprout': Key('cmd-enter'),
+    'plantar': 'bootstrap',
+    'grant email': 'gnb225@nyu.edu',
+    'storage room': 'github',
+    'studio consul': Key('ctrl-`'),
 
 
 
@@ -410,6 +416,7 @@ keymap.update({
     'new directory': 'mkdir ',
     'react server': ['npm start', Key('enter')],
     'react install': 'npm i --save ',
+    'react build': 'npm run build',
     'open in studio': ['code .', Key('enter')],
     
 })
