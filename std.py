@@ -3,7 +3,7 @@ from talon import ctrl, clip
 from talon_init import TALON_HOME, TALON_PLUGINS, TALON_USER
 import string
 
-alpha_alt = 'air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip'.split()
+alpha_alt = 'air bat cap drum each fine gust harp sit jury crunch look made near owl pit quench red sun trap urge vest whale plex yank zip'.split()
 ###
 alnum = list(zip(alpha_alt, string.ascii_lowercase)) + [(str(i), str(i)) for i in range(0, 10)]
 
@@ -196,7 +196,7 @@ keymap.update({
     'backslash': '\\',
 
     '(dot dot | dotdot)': '..',
-    'cd': 'cd ',
+    'cd': 'cdls ',
     'cd talon home': 'cd {}'.format(TALON_HOME),
     'cd talon user': 'cd {}'.format(TALON_USER),
     'cd talon plugins': 'cd {}'.format(TALON_PLUGINS),
@@ -344,18 +344,21 @@ keymap.update({
 
     'new window': Key('cmd-n'),
     'next window': Key('cmd-`'),
-    'last window': Key('cmd-shift-`'),
-    'next app': Key('cmd-tab'),
-    'last app': Key('cmd-shift-tab'),
-    'next tab': Key('ctrl-tab'),
-    'new tab': Key('cmd-t'),
-    'last tab': Key('ctrl-shift-tab'),
+    # 'last window': Key('cmd-shift-`'),
+    # 'next app': Key('cmd-tab'),
+    # 'last app': Key('cmd-shift-tab'),
+    # 'next tab': Key('ctrl-tab'),
+    # 'new tab': Key('cmd-t'),
+    # 'last tab': Key('ctrl-shift-tab'),
 
     'next space': Key('cmd-alt-ctrl-right'),
     'last space': Key('cmd-alt-ctrl-left'),
 
     'scroll down': [Key('down')] * 30,
     'scroll up': [Key('up')] * 30,
+
+# this is the end of the premade script.
+
 
     # GRANT COMMANDS
     'revert': Key('cmd-z'),
@@ -370,15 +373,15 @@ keymap.update({
     'paste': Key('cmd-v'),
     'shield': Key('cmd-s'),
     'select line': [Key('home'), Key('shift-end')],
-    'end of line': Key('end'),  
+    'fast forward line': Key('end'),  
     'quit application': Key('cmd-q'),
     'rearrange up': Key('alt-up'),
     'rearrange down': Key('alt-down'),
     'continue thought': Key('shift-enter'),
     'chrome back': Key('cmd-left'),
-    'start of line': Key('home'),
-    
-
+    'rewind line': Key('home'),
+    'rinse': [Key('home'), Key('delete')],
+                                                   
     # JAVASCRIPT / VSCODE
     'javascript console': ['console.log()', Key('left')],
     'comment out': [Key('cmd-/')],
@@ -399,25 +402,49 @@ keymap.update({
     'new variable': 'var ',
     'tiny skittish': 'str',
     'sprout': Key('cmd-enter'),
-    'plantar': 'bootstrap',
     'grant email': 'gnb225@nyu.edu',
     'storage room': 'github',
     'studio consul': Key('ctrl-`'),
+    'divider': '<div ',
+    'evict': [Key('backspace')] * 10,
+    'ultimate evict': [Key('backspace')] * 100,
+    'get remove': Key('ctrl-w'),
+    'ticker': Key('`'),
+    'latex': Key('cmd-enter'),
+    'possess':Key('shift-alt-left'),
+    'alternate': Key('cmd-tab'),
+    'new jack': Key('cmd-t'),
+    'anterior': Key('ctrl-shift-tab'),
+    'posterior': Key('ctrl-tab'),
+    'close window': Key('cmd-w'),
+    'deliver': 'import ',
+    'website url': 'christenkerrmd.com',
+    
+# CHOPPING BLOCK
+
+# SCRIPT OPTIMIZATION IDEAS
+# - automatically capitalize i
+# - phrase toggle
 
 
 
-    # REPLACEMENT WORDS
+
+
+
     # TERMINAL
     'showy': ['ls', Key('enter')],
     'get delete': Key('ctrl-c'),
-    'run git add': 'git add .',
-    'run get commit': ['git commit -m ""', Key('left')],
+    'run ad': 'git add .',
+    'run commit': ['git commit -m ""', Key('left')],
     'run gp': 'git push origin master',
     'new directory': 'mkdir ',
     'react server': ['npm start', Key('enter')],
     'react install': 'npm i --save ',
     'react build': 'npm run build',
+    'react upload': 'npm run deploy',
     'open in studio': ['code .', Key('enter')],
+    'heroic': 'heroku',
+    'uber': ['cdls ..', Key('enter')],#
     
 })
 ctx.keymap(keymap)
