@@ -419,12 +419,16 @@ keymap.update({
     'close window': Key('cmd-w'),
     'deliver': 'import ',
     'website url': 'christenkerrmd.com',
+    'frontal mount': Key('ctrl-p'),
+    'japan': 'anime',
     
 # CHOPPING BLOCK
 
 # SCRIPT OPTIMIZATION IDEAS
 # - automatically capitalize i
 # - phrase toggle
+# - unlock function keys
+# - 
 
 
 
@@ -439,12 +443,15 @@ keymap.update({
     'run gp': 'git push origin master',
     'new directory': 'mkdir ',
     'react server': ['npm start', Key('enter')],
-    'react install': 'npm i --save ',
-    'react build': 'npm run build',
-    'react upload': 'npm run deploy',
+    'react install': ['npm i --save', Key('enter')],
+    'react build': ['npm run build', Key('enter')],
+    'react deploy': ['npm run deploy', Key('enter')],
+    # 'react upload': ['npm run build && npm run deploy', Key('enter')],
+    'react upload': 'sh /Users/grant/Desktop/easy_build_and_commit.sh ',
     'open in studio': ['code .', Key('enter')],
     'heroic': 'heroku',
-    'uber': ['cdls ..', Key('enter')],#
+    'uber': ['cdls ..', Key('enter')],
+    'no demons': 'nodemon',
     
 })
 ctx.keymap(keymap)
