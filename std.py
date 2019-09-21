@@ -3,7 +3,7 @@ from talon import ctrl, clip
 from talon_init import TALON_HOME, TALON_PLUGINS, TALON_USER
 import string
 
-alpha_alt = 'air bat cap drum each fine gust harp sit jury crunch look made near owl pit quench red sun trap urge vest whale plex yank zip'.split()
+alpha_alt = 'air bat cap drum each fine gust harp sit jury crunch look made near bob pit quench red sun trap urge vest whale plex yank zip'.split()
 ###
 alnum = list(zip(alpha_alt, string.ascii_lowercase)) + [(str(i), str(i)) for i in range(0, 10)]
 
@@ -95,6 +95,10 @@ def rot13(i, word, _):
         out += c
     return out
 
+# def switch_tab(m):
+#     num = m['ctxname.number']
+#     press(f'cmd-{num}')
+
 formatters = {
     'dunder': (True,  lambda i, word, _: '__%s__' % word if i == 0 else word),
     'camel':  (True,  lambda i, word, _: word if i == 0 else word.capitalize()),
@@ -146,6 +150,14 @@ ctx = Context('input')
 keymap = {}
 keymap.update(alpha)
 keymap.update({
+
+# ctx.keymap({
+#     'chrome switch {input.number}': switch_tab,
+# })
+# ctx.set_list('number', [1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+
+
     'phrase <dgndictation> [over]': text,
 
     'sentence <dgndictation> [over]': sentence_text,
@@ -363,7 +375,7 @@ keymap.update({
     # GRANT COMMANDS
     'revert': Key('cmd-z'),
     'super': [Key('up')] * 130,
-    'fall': [Key('down')] * 130,
+    'drop': [Key('down')] * 130,
     'grabby': Key('cmd-a'),
     'rover': Key('cmd-f'),
     'remove':[Key('shift-alt-left'), Key('delete')],
@@ -381,9 +393,10 @@ keymap.update({
     'chrome back': Key('cmd-left'),
     'rewind line': Key('home'),
     'rinse': [Key('home'), Key('delete')],
-                                                   
+    'bold': Key('cmd-b'),
+                           
     # JAVASCRIPT / VSCODE
-    'javascript console': ['console.log()', Key('left')],
+    'javascript console': ['console.log();', Key('left'), Key('left')],
     'comment out': [Key('cmd-/')],
     'develop': Key('cmd-alt-i'),
     'let': 'let ',
@@ -398,12 +411,13 @@ keymap.update({
     'super select similar': [Key('cmd-d')] * 10,
     'ultimate select similar': [Key('cmd-d')] * 100,
     'chrome reload': Key('cmd-r'),
+    'chrome hard reload': Key('cmd-r'),
     'chrome reopen': Key('cmd-shift-t'),
     'new variable': 'var ',
     'tiny skittish': 'str',
     'sprout': Key('cmd-enter'),
     'grant email': 'gnb225@nyu.edu',
-    'storage room': 'github',
+    'storage room': 'GitHub',
     'studio consul': Key('ctrl-`'),
     'divider': '<div ',
     'evict': [Key('backspace')] * 10,
@@ -418,9 +432,16 @@ keymap.update({
     'posterior': Key('ctrl-tab'),
     'close window': Key('cmd-w'),
     'deliver': 'import ',
-    'website url': 'christenkerrmd.com',
+    'grants website': 'https://grantnbrown.com/',
     'frontal mount': Key('ctrl-p'),
-    'japan': 'anime',
+    'japan': 'Anime',
+    'cultivate': Key('cmd-k'),
+    'lightsaber': 'https://www.linkedin.com/in/grantnbkbrown/',
+    'grant phone': '571-249-8475',
+    'coliseum': 'Reddit',
+    # 'test': Key('1'),
+
+
     
 # CHOPPING BLOCK
 
@@ -437,7 +458,7 @@ keymap.update({
 
     # TERMINAL
     'showy': ['ls', Key('enter')],
-    'get delete': Key('ctrl-c'),
+    'terminal delete': Key('ctrl-c'),
     'run ad': 'git add .',
     'run commit': ['git commit -m ""', Key('left')],
     'run gp': 'git push origin master',
@@ -446,12 +467,18 @@ keymap.update({
     'react install': ['npm i --save', Key('enter')],
     'react build': ['npm run build', Key('enter')],
     'react deploy': ['npm run deploy', Key('enter')],
-    # 'react upload': ['npm run build && npm run deploy', Key('enter')],
-    'react upload': 'sh /Users/grant/Desktop/easy_build_and_commit.sh ',
+    'react upload': ['npm run build && npm run deploy', Key('enter')],  
+    'kristin upload': 'sh /Users/grant/Desktop/easy_build_and_commit.sh ',
     'open in studio': ['code .', Key('enter')],
     'heroic': 'heroku',
     'uber': ['cdls ..', Key('enter')],
     'no demons': 'nodemon',
+    'get check out': 'git checkout',
+    'heroic push': 'git push heroku master',
+    'redux': 'redux',
+    'bridge':' = ',  
+    
+    
     
 })
-ctx.keymap(keymap)
+ctx.keymap(keymap)  
