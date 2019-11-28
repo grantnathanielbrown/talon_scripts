@@ -95,10 +95,6 @@ def rot13(i, word, _):
         out += c
     return out
 
-# def switch_tab(m):
-#     num = m['ctxname.number']
-#     press(f'cmd-{num}')
-
 formatters = {
     'dunder': (True,  lambda i, word, _: '__%s__' % word if i == 0 else word),
     'camel':  (True,  lambda i, word, _: word if i == 0 else word.capitalize()),
@@ -151,10 +147,6 @@ keymap = {}
 keymap.update(alpha)
 keymap.update({
 
-# ctx.keymap({
-#     'chrome switch {input.number}': switch_tab,
-# })
-# ctx.set_list('number', [1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 
 
@@ -404,6 +396,7 @@ keymap.update({
     'function': 'function ',
     'skittish': 'String',
     'classic loop': "for (i = 0; i < x; i++) ",
+    'classic conditional': ['if () {}', Key('left'), Key('enter'), Key('up')],
     'binder': Key('cmd-b'),
     'close studio tabs':[Key('cmd-k'), Key('w')],
     'super rover': Key('cmd-shift-f'),
@@ -439,10 +432,10 @@ keymap.update({
     'lightsaber': 'https://www.linkedin.com/in/grantnbkbrown/',
     'grant phone': '571-249-8475',
     'coliseum': 'Reddit',
-    # 'test': Key('1'),
 
 
-    
+
+
 # CHOPPING BLOCK
 
 # SCRIPT OPTIMIZATION IDEAS
@@ -455,16 +448,17 @@ keymap.update({
 
 
 
-
     # TERMINAL
     'showy': ['ls', Key('enter')],
+    'hidden showy': ['ls -a', Key('enter')],
     'terminal delete': Key('ctrl-c'),
     'run ad': 'git add .',
     'run commit': ['git commit -m ""', Key('left')],
     'run gp': 'git push origin master',
     'new directory': 'mkdir ',
     'react server': ['npm start', Key('enter')],
-    'react install': ['npm i --save', Key('enter')],
+    'react install all': ['npm i --save', Key('enter')],
+    'react install individual': 'npm i --save',
     'react build': ['npm run build', Key('enter')],
     'react deploy': ['npm run deploy', Key('enter')],
     'react upload': ['npm run build && npm run deploy', Key('enter')],  
@@ -476,7 +470,11 @@ keymap.update({
     'get check out': 'git checkout',
     'heroic push': 'git push heroku master',
     'redux': 'redux',
-    'bridge':' = ',  
+    'bridge':' = ',
+    'jason': 'JSON',
+    'access state': 'this.state.',    
+# mongod --config /usr/local/etc/mongod.conf
+
     
     
     
