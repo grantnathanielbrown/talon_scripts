@@ -375,6 +375,7 @@ keymap.update({
     'starchy': Key('cmd-space'),
     'copy': Key('cmd-c'),
     'paste': Key('cmd-v'),
+    'plaintext paste': Key('cmd-alt-v'),
     'shield': Key('cmd-s'),
     'select line': [Key('home'), Key('shift-end')],
     'fast forward line': Key('end'),  
@@ -432,8 +433,17 @@ keymap.update({
     'lightsaber': 'https://www.linkedin.com/in/grantnbkbrown/',
     'grant phone': '571-249-8475',
     'coliseum': 'Reddit',
-
-
+    'redux': 'redux',
+    'bridge':' = ',
+    'walkway': ' - ',
+    'jason': 'JSON',
+    'access state': 'this.state.',
+    'grant address': '829 Whann Avenue',
+    'grant full name': 'Grant Nathaniel Brown',
+    'bold': Key('cmd-b'),
+    'normalized text': Key('cmd-alt-0'),      
+    'arrow skeleton': ['() => {}', Key('left'), Key('enter')],
+    'initialize react class': ['constructor() {}', Key('left'), Key('enter'), 'super()'],
 
 
 # CHOPPING BLOCK
@@ -455,24 +465,22 @@ keymap.update({
     'run ad': 'git add .',
     'run commit': ['git commit -m ""', Key('left')],
     'run gp': 'git push origin master',
-    'new directory': 'mkdir ',
+    'run get remote': 'git remote -v',
     'react server': ['npm start', Key('enter')],
     'react install all': ['npm i --save', Key('enter')],
     'react install individual': 'npm i --save',
     'react build': ['npm run build', Key('enter')],
     'react deploy': ['npm run deploy', Key('enter')],
     'react upload': ['npm run build && npm run deploy', Key('enter')],  
-    'kristin upload': 'sh /Users/grant/Desktop/easy_build_and_commit.sh ',
+    'react test': ['npm run test', Key('enter')],    
     'open in studio': ['code .', Key('enter')],
     'heroic': 'heroku',
     'uber': ['cdls ..', Key('enter')],
     'no demons': 'nodemon',
     'get check out': 'git checkout',
     'heroic push': 'git push heroku master',
-    'redux': 'redux',
-    'bridge':' = ',
-    'jason': 'JSON',
-    'access state': 'this.state.',    
+    
+  
 # mongod --config /usr/local/etc/mongod.conf
 
     
