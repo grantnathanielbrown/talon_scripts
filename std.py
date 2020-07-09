@@ -390,7 +390,7 @@ keymap.update({
     'bold': Key('cmd-b'),
     'api': 'API',
     'hometown': 'McLean',
-                           
+    '(mongo | mungo)': 'MongoDB',                      
     # JAVASCRIPT / VSCODE
     'javascript console': ['console.log();', Key('left'), Key('left')],
     'comment out': [Key('cmd-/')],
@@ -458,6 +458,9 @@ keymap.update({
     "genesis": 'create-react-app',
     "combination": ".com",
     "jester": "jest",
+    "engraving": "title",
+    "assist": "bootstrap",
+    # "url": "URL",
 # SCRIPT OPTIMIZATION IDEAS
 # - automatically capitalize i
 # - phrase toggle
@@ -492,7 +495,6 @@ keymap.update({
     'heroic push': 'git push heroku master',
     
 
-# mongod --config /usr/local/etc/mongod.conf
 
     
     
