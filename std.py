@@ -213,7 +213,7 @@ keymap.update({
     'run get branch': 'git branch ',
     'run get checkout': 'git checkout ',
     'run get clone': 'git clone ',
-    'run get commit': ['git commit],
+    'run get commit': 'git commit ',
     'run get diff': 'git diff ',
     'run get fetch': 'git fetch ',
     'run get grep': 'git grep ',
